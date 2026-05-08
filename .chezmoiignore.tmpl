@@ -1,0 +1,8 @@
+install.sh
+
+{{- if ne .chezmoi.os "darwin" }}
+dot_config/ghostty
+dot_config/ghostty/**
+.config/ghostty
+.config/ghostty/**
+{{- end }}
