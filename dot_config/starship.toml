@@ -1,0 +1,30 @@
+[cmd_duration]
+show_notifications = true
+
+[time]
+disabled = false
+
+[character]
+error_symbol = "[→](bold red)"
+success_symbol = "[→](bold green)"
+
+[git_branch]
+symbol = " "
+
+[c]
+symbol = " "
+
+[nix_shell]
+impure_msg = "[impure](blue)"
+pure_msg = "[pure](green)"
+symbol = "  "
+
+[python]
+format = "via [${symbol}(${version} )]($style)"
+symbol = " "
+
+[zig]
+symbol = " "
+
+[aws]
+disabled = true
