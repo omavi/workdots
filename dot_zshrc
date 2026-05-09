@@ -3,6 +3,11 @@ if [ -d "$HOME/.local/bin" ] && [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Ona secrets
+if [ -f /etc/profile.d/ona-secrets.sh ]; then
+  source /etc/profile.d/ona-secrets.sh
+fi
+
 # Homebrew
 if [ -f /opt/homebrew/bin/brew ] && [[ ":$PATH:" != *":/opt/homebrew/bin:"* ]]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
