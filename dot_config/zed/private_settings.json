@@ -20,6 +20,24 @@
   "show_whitespaces": "all",
   "show_edit_predictions": true,
   "soft_wrap": "editor_width",
+  "languages": {
+    "TypeScript": {
+      "language_servers": [
+        "tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+        "...",
+      ],
+    },
+    "TSX": {
+      "language_servers": [
+        "tsgo",
+        "!vtsls",
+        "!typescript-language-server",
+        "...",
+      ],
+    },
+  },
   "project_panel": {
     "dock": "left",
   },
